@@ -15,10 +15,14 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            children: [Text('Hello World!'), Text("School is tomorrow")],
+            children: [
+              Text('Hello World!'),
+              Text('I\'m a gummy bear'),
+            ],
           ),
         ),
       ),
     );
   }
 }
+
