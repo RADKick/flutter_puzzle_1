@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
               Text('Hello World!'),
+              Text('I\'m a gummy bear'),
             ],
           ),
         ),
