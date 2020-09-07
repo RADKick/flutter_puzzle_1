@@ -14,7 +14,11 @@ class MyApp extends StatelessWidget {
           title: Text("Test"),
         ),
         body: Center(
-          child: Text("Hello World!"),
+          child: Column(
+            children: [
+              Text('Hello World!'),
+            ],
+          ),
         ),
       ),
     );
