@@ -11,13 +11,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Test"),
+          backgroundColor: Colors.orange,
+          title: Text(
+              "Sliding Game",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          centerTitle: true,
         ),
         body: Center(
           child: Column(
             children: [
               Text('Hello World!'),
               Text("School is tomorrow"),
+              Text('I\'m a gummy bear'),
             ],
           ),
         ),
@@ -25,3 +35,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
