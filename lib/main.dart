@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
               Text('Hello World!'),
-              Text('I\'m a gummy bear'),
+              Text("School is tomorrow"),
             ],
           ),
         ),
@@ -25,4 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
