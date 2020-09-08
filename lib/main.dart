@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'board.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,25 +12,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.orange,
+          backgroundColor: Colors.blue,
           title: Text(
-              "Sliding Game",
+            "Sliding Game",
             style: TextStyle(
               color: Colors.white,
               fontSize: 30.0,
-              fontWeight: FontWeight.bold,
+              //fontWeight: FontWeight.bold,
             ),
           ),
           centerTitle: true,
         ),
         body: Center(
-          child: Column(
-            children: [
-              Text('Hello World!'),
-              Text("School is tomorrow"),
-              Text('I\'m a gummy bear'),
-            ],
-          ),
+          child: Board(),
         ),
       ),
     );
