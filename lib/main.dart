@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           title: Text(
             "Sliding Game",
             style: TextStyle(
-              color: Colors.blue,
+              color: Colors.red,
               fontSize: 30.0,
               //fontWeight: FontWeight.bold,
             ),
