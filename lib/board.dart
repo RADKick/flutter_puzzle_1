@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 class Board extends StatefulWidget {
   @override
@@ -16,123 +17,61 @@ class _BoardState extends State<Board> {
   }
 
   Widget makeBoard() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('2'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('3'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('4'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-            ]),
-        Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-            ]),
-        Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-              RaisedButton(
-                child: Text('1'),
-                onPressed: () {
-                  print('hello');
-                }, //add number icon
-              ),
-            ]),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        Row(
           children: <Widget>[
-            RaisedButton(
-              child: Text('1'),
-              onPressed: () {
-                print('hello');
-              }, //add number icon
-            ),
-            RaisedButton(
-              child: Text('1'),
-              onPressed: () {
-                print('hello');
-              }, //add number icon
-            ),
-            RaisedButton(
-              child: Text('1'),
-              onPressed: () {
-                print('hello');
-              }, //add number icon
-            ),
-            RaisedButton(
-              child: Text('1'),
-              onPressed: () {
-                print('hello');
-              }, //add number icon
-            ),
+            makeButton("1"),
+            makeButton("2"),
+            makeButton("3"),
+            makeButton("4"),
+          ],
+        ),
+        Row(
+          children: <Widget>[
+            makeButton("5"),
+            makeButton("6"),
+            makeButton("7"),
+            makeButton("8"),
+          ],
+        ),
+        Row(
+          children: <Widget>[
+            makeButton("9"),
+            makeButton("10"),
+            makeButton("11"),
+            makeButton("12"),
+          ],
+        ),
+        Row(
+          children: <Widget>[
+            makeButton("13"),
+            makeButton("14"),
+            makeButton("15"),
+            makeButton("16"),
           ],
         ),
       ],
+    );
+  }
+
+  Expanded makeButton(String number) {
+    return Expanded(
+      flex: 1,
+      child: Padding(
+        padding: EdgeInsets.all(3.0),
+        child: RaisedButton(
+          textColor: Colors.teal,
+          color: Colors.teal,
+          child: new Text(
+            number,
+            style: new TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

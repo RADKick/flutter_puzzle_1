@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.cyan,
           title: Text(
-            "Sliding Game",
+            "Slider 2.0",
             style: TextStyle(
               color: Colors.white,
-              fontSize: 30.0,
-              //fontWeight: FontWeight.bold,
+              fontSize: 32.0,
+              fontWeight: FontWeight.bold,
             ),
           ),
           centerTitle: true,
@@ -30,4 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
